@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TailWind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <!-- NAV -->
+    <nav class="">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+            <div
+                class="nav px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl flex justify-between max-md:flex-col transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3] ">
+                <div
+                    class="logo-name max-md:mb-5 flex items-center justify-between max-md:justify-center gap-x-6 max-md:gap-x-2 ">
+                    <svg class="w-15 max-md:w-12 tansition duration-500 hover:scale-110 " viewBox="0 0 48 48"
+                        fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid of circles with varying sizes -->
+                        <circle cx="16" cy="16" r="5" opacity="0.9"></circle>
+                        <circle cx="32" cy="16" r="4" opacity="0.8"></circle>
+                        <circle cx="16" cy="32" r="4" opacity="0.7"></circle>
+                        <circle cx="32" cy="32" r="5" opacity="0.85"></circle>
+                        <!-- Small accent dots -->
+                        <circle cx="24" cy="8" r="2" opacity="1"></circle>
+                        <circle cx="8" cy="24" r="2" opacity="0.9"></circle>
+                        <circle cx="40" cy="24" r="2" opacity="0.9"></circle>
+                        <circle cx="24" cy="40" r="2" opacity="1"></circle>
+                        <!-- Tiny corner dots -->
+                        <circle cx="8" cy="8" r="1" opacity="0.6"></circle>
+                        <circle cx="40" cy="8" r="1" opacity="0.6"></circle>
+                        <circle cx="8" cy="40" r="1" opacity="0.6"></circle>
+                        <circle cx="40" cy="40" r="1" opacity="0.6"></circle>
+                    </svg>
+                    <h1 class="text-white text-3xl max-md:text-2xl font-bold ">Glossy Touch</h1>
+                </div>
+                <ul class="list-nav flex items-center justify-between gap-6 max-md:flex-col ">
+                    <li
+                        class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
+                        <a href="index.html">Home</a></li>
+                    <li
+                        class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
+                        <a href="about.html">About</a></li>
+                    <li
+                        class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
+                        <a href="services.html">Services</a></li>
+                    <li
+                        class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 bg-white/[0.2]  ">
+                        <a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--// NAV// -->
+    <!-- HEADER  -->
+    <header class="mt-15">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+        <div class="flex items-center justify-between gap-8 max-sm:flex-col ">
+            <div class=" w-1/2 max-sm:w-full  text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                <h2 class="text-white text-3xl font-bold mb-5" >Get In Touch</h2>
+                    <label class="font-bold text-white/[0.9] block" for="name">Full Name</label>
+                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="Enter Your Full Name">
+                    <label class="font-bold text-white/[0.9] mt-5 block" for="name">Email Address</label>
+                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="Enter Your Email">
+                    <label class="font-bold text-white/[0.9] mt-5 block" for="name">Subject</label>
+                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="What's this about?">
+                    <label class="font-bold text-white/[0.9] mt-5 block" for="name">Message</label>
+                    <textarea class="block mt-2 border border-white/[0.4] rounded-lg w-full h-24 px-3  bg-white/[0.21] text-white/[0.4] py-2  "  type="text" id="name" >Tell Us About Your Project</textarea>
+
+                    <button class="rounded-full border-2 border-white/[0.4] bg-white/[0.20] mt-10 text-white py-2 px-8 hover:shadow-sm shadow-black/[0.2] hover:-translate-y-2 hover:bg-white/[0.3] transition duration-500 ">Send Message</button>
+                </div>
+                <div class="w-1/2 max-sm:w-full pb-55 max-sm:pb-0   text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                    <h2 class=" text-white text-3xl font-bold mb-5" >Contact Information</h2>
+                    <div class="flex items-center justify-start gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📧</div>
+                        <div class="info">
+                            <h3 class="text-white font-bold">Email</h3>
+                            <p>hello@glossytouch.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-start gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📞</div>v
+                        <div class="info">
+                            <h3 class="text-white font-bold">Phone</h3>
+                            <p> +1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-start gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📍</div>
+                        <div class="info">
+                            <h3 class="text-white font-bold">Address</h3>
+                            <p>123 Design Street
+                                <br>Creative District, CD 12345</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-start gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">🕒</div>
+                        <div class="info">
+                            <h3 class="text-white font-bold">Business Hours</h3>
+                            <p>Mon-Fri: 9AM-6PM
+                                <br>Sat-Sun: 10AM-4PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // HEADER // -->
+    <!-- MAPS -->
+    <div class="mt-15">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12">
+            <div class=" text-white/[0.6] text-center px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                <h3 class="text-white font-bold text-center text-3xl ">Find Us</h3>
+                <div class=" text-white/[0.6] px-8 py-25 bg-white/[0.3] border border-white/[0.09] rounded-2xl mt-10">
+                    <div class="text-6xl">🗺️</div>
+                    <h4 class="text-white font-bold mt-8 mb-5" >Interactive Map Area</h4>
+                    <p>123 Design Street</p>
+                    <p class="mt-5 mb-6">Creative District, CD 12345</p>
+                    <p class="text-sm">Map integration can be added with
+                        <br>Google Maps, OpenStreetMap, or Mapbox</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// MAPS //-->
+    <!-- FOOTER -->
+    <footer class="mt-15">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+            <div
+                class="footer text-white/[0.6] px-15 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                <ul class="flex max-md:flex-col max-md:gap-y-7 items-center justify-evenly text-sm mx-10 ">
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                            href="about.html">About US</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                            href="index.html">Privacy Policy</a></li>
+                            <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                                href="index.html">Terms of Service</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                            href="index.html">XML Sitemap</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                            href="contact.html">Contact</a></li>
+                </ul>
+                <hr class=" text-white/[0.2] my-5">
+                <p class="text-center text-sm ">© 2025 Glossy Touch. All rights reserved. Crafted with modern web
+                    technologies. Provided by TemplateMo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>

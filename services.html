@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TailWind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <!-- NAV -->
+    <nav class="">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+            <div class="nav px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl flex justify-between max-md:flex-col transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3] ">
+                <div class="logo-name max-md:mb-5 flex items-center justify-between max-md:justify-center gap-x-6 max-md:gap-x-2 ">
+                    <svg class="w-15 max-md:w-12 tansition duration-500 hover:scale-110 " viewBox="0 0 48 48" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid of circles with varying sizes -->
+                        <circle cx="16" cy="16" r="5" opacity="0.9"></circle>
+                        <circle cx="32" cy="16" r="4" opacity="0.8"></circle>
+                        <circle cx="16" cy="32" r="4" opacity="0.7"></circle>
+                        <circle cx="32" cy="32" r="5" opacity="0.85"></circle>
+                        <!-- Small accent dots -->
+                        <circle cx="24" cy="8" r="2" opacity="1"></circle>
+                        <circle cx="8" cy="24" r="2" opacity="0.9"></circle>
+                        <circle cx="40" cy="24" r="2" opacity="0.9"></circle>
+                        <circle cx="24" cy="40" r="2" opacity="1"></circle>
+                        <!-- Tiny corner dots -->
+                        <circle cx="8" cy="8" r="1" opacity="0.6"></circle>
+                        <circle cx="40" cy="8" r="1" opacity="0.6"></circle>
+                        <circle cx="8" cy="40" r="1" opacity="0.6"></circle>
+                        <circle cx="40" cy="40" r="1" opacity="0.6"></circle>
+                    </svg>
+                    <h1 class="text-white text-3xl max-md:text-2xl font-bold ">Glossy Touch</h1>
+                </div>
+                <ul class="list-nav flex items-center justify-between gap-6 max-md:flex-col ">
+                    <li class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] "><a href="index.html">Home</a></li>
+                    <li class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2]  "><a href="about.html">About</a></li>
+                    <li class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 bg-white/[0.2]  "><a href="services.html">Services</a></li>
+                    <li class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2]   "><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--// NAV// -->
+    <!-- HEADER  -->
+    <header>
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+            <div class="header flex items-center justify-between footer text-white/[0.6] px-15 py-16 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                <h2 class="text-5xl text-white font-bold">Our Services</h2>
+                <p class="w-1/2 text-lg" >Comprehensive design and development solutions tailored to your needs</p>
+            </div>
+        </div>
+    </header>
+    <!-- // HEADER // -->
+    <!-- SERVICES -->
+    <div class="services-section container mx-auto xl:w-5/6 my-5 max-md:w-11/12  mt-15">
+        <div class="services members grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-5 mt-15">
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">🎨</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >UI/UX Design</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Create stunning user interfaces with modern design principles, focusing on usability and aesthetic appeal.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">User Research & Analysis</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Wireframing & Prototyping</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Visual Design & Branding</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Responsive Design</li>
+                </ul>
+            </div>
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">💻</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >Web Development</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Build fast, secure, and scalable websites using the latest web technologies and best practices.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Frontend Development</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Backend Integration</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">SEO Implementation</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Performance Optimization</li>
+                </ul>
+            </div>
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">📱</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >Mobile Apps</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Develop native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">iOS & Android Development</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Cross-platform Solutions</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">App Store Optimization</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Maintenance & Update</li>
+                </ul>
+            </div>
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">🚀</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >Digital Strategy</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Strategic consulting to help your business thrive in the digital landscape with data-driven insights.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Digital Transformation</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Analytics & Reporting</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Growth Strategy</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Technology Consulting</li>
+                </ul>
+            </div>
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">☁️</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >Cloud Solutions</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Modernize your infrastructure with scalable cloud services and seamless migration strategies.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Cloud Migration</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">DevOps & Automation</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Infrastructure as Code</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">24/7 Monitoring</li>
+                </ul>
+            </div>
+            <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
+                <div class="title w-full flex items-center justify-start gap-5">
+                    <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">🔐</div>
+                    <h3 class="text-white text-2xl font-bold mt-4 mb-2" >Cybersecurity</h3>
+                </div>
+                <p class="text-white/[0.6] font-bold leading-7 mt-5">Protect your digital assets with comprehensive security solutions and threat protection.</p>
+                <ul class="w-full mt-4">
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Security Auditing</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Penetration Testing</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Data Protection</li>
+                    <li class="before:content-['✓'] before:text-lg before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:font-bold  relative ml-5 mb-2 text-white/[0.7]">Compliance Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--// SERVICES// -->
+    <!-- FOOTER -->
+    <footer class="mt-15">
+        <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
+            <div class="footer text-white/[0.6] px-15 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                <ul class="flex max-md:flex-col max-md:gap-y-7 items-center justify-evenly text-sm mx-10 ">
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a href="about.html">About US</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a href="index.html">Privacy Policy</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a href="index.html">Terms of Service</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a href="index.html">XML Sitemap</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a href="contact.html">Contact</a></li>
+                </ul>
+                <hr class=" text-white/[0.2] my-5">
+                <p class="text-center text-sm ">© 2025 Glossy Touch. All rights reserved. Crafted with modern web technologies. Provided by TemplateMo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+</body>
+</html>
