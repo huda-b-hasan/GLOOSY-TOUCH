@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-800">
+<body class="bg-linear-to-br from-black/[0.3] via-indigo-800/[0.3] to-violet-600/[0.3] relative z-10">
     <!-- NAV -->
     <nav class="">
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
@@ -46,16 +46,16 @@
     <!-- HEADER  -->
     <header>
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
-            <div class="header flex items-center justify-between footer text-white/[0.6] px-15 py-16 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+            <div class="header flex items-center justify-between max-md:flex-col max-md:gap-10  footer text-white/[0.6] px-15 py-16 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
                 <h2 class="text-5xl text-white font-bold">Our Services</h2>
-                <p class="w-1/2 text-lg" >Comprehensive design and development solutions tailored to your needs</p>
+                <p class="w-1/2 text-lg max-md:w-full max-md:text-center" >Comprehensive design and development solutions tailored to your needs</p>
             </div>
         </div>
     </header>
     <!-- // HEADER // -->
     <!-- SERVICES -->
     <div class="services-section container mx-auto xl:w-5/6 my-5 max-md:w-11/12  mt-15">
-        <div class="services members grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-5 mt-15">
+        <div class="services members grid grid-cols-3  max-xl:grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-5 mt-15">
             <div class="service member group flex items-center justify-center flex-col px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]  ">
                 <div class="title w-full flex items-center justify-start gap-5">
                     <div class="service-icon w-12 h-12  rounded-lg  bg-white/[0.3] flex items-center justify-center text-xl">🎨</div>

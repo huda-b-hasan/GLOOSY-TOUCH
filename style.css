@@ -1,6 +1,15 @@
 *{
     box-sizing: border-box;
 }
-.active{
-    background-color: rgb(255 255 255 /0.09);
+/* div {
+    animation: alternate;
+} */
+
+@keyframes wiggle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
