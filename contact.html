@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-transparent">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- TAILWIND ELEMENTS  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
 </head>
 
 <body class="bg-slate-800 bg-linear-to-br from-black/[0.3] via-indigo-800/[0.3] to-violet-600/[0.3]">
     <!-- NAV -->
     <nav class="">
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
-            <div
+            <div data-twe-ripple-init data-twe-ripple-color="light"
                 class="nav px-10 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl flex justify-between max-md:flex-col transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3] ">
                 <div
                     class="logo-name max-md:mb-5 flex items-center justify-between max-md:justify-center gap-x-6 max-md:gap-x-2 ">
@@ -40,16 +59,20 @@
                 <ul class="list-nav flex items-center justify-between gap-6 max-md:flex-col ">
                     <li
                         class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
-                        <a href="index.html">Home</a></li>
+                        <a href="index.html">Home</a>
+                    </li>
                     <li
                         class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
-                        <a href="about.html">About</a></li>
+                        <a href="about.html">About</a>
+                    </li>
                     <li
                         class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 hover:bg-white/[0.2] ">
-                        <a href="services.html">Services</a></li>
+                        <a href="services.html">Services</a>
+                    </li>
                     <li
                         class="text-white text-md font-bold rounded-xl px-5 py-2 shadow-2xs shadow-white cursor-pointer transition duration-500 bg-white/[0.2]  ">
-                        <a href="contact.html">Contact</a></li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,50 +81,68 @@
     <!-- HEADER  -->
     <header class="mt-15">
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
-        <div class="flex items-center justify-between gap-8 max-sm:flex-col ">
-            <div class=" w-1/2 max-sm:w-full  text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
-                <h2 class="text-white text-3xl font-bold mb-5" >Get In Touch</h2>
+            <div class="flex items-center justify-between gap-8 max-sm:flex-col ">
+                <div data-twe-ripple-init data-twe-ripple-color="light"
+                    class=" w-1/2 max-sm:w-full  text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                    <h2 class="text-white text-3xl font-bold mb-5">Get In Touch</h2>
                     <label class="font-bold text-white/[0.9] block" for="name">Full Name</label>
-                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="Enter Your Full Name">
+                    <input
+                        class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]"
+                        type="text" id="name" placeholder="Enter Your Full Name">
                     <label class="font-bold text-white/[0.9] mt-5 block" for="name">Email Address</label>
-                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="Enter Your Email">
+                    <input
+                        class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]"
+                        type="text" id="name" placeholder="Enter Your Email">
                     <label class="font-bold text-white/[0.9] mt-5 block" for="name">Subject</label>
-                    <input class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]" type="text" id="name" placeholder="What's this about?">
+                    <input
+                        class="block mt-2 border border-white/[0.4] rounded-lg w-full h-12 px-3   bg-white/[0.21] text-white/[0.9]"
+                        type="text" id="name" placeholder="What's this about?">
                     <label class="font-bold text-white/[0.9] mt-5 block" for="name">Message</label>
-                    <textarea class="block mt-2 border border-white/[0.4] rounded-lg w-full h-24 px-3  bg-white/[0.21] text-white/[0.4] py-2  "  type="text" id="name" >Tell Us About Your Project</textarea>
+                    <textarea
+                        class="block mt-2 border border-white/[0.4] rounded-lg w-full h-24 px-3  bg-white/[0.21] text-white/[0.4] py-2  "
+                        type="text" id="name">Tell Us About Your Project</textarea>
 
-                    <button class="rounded-full border-2 border-white/[0.4] bg-white/[0.20] mt-10 text-white py-2 px-8 hover:shadow-sm shadow-black/[0.2] hover:-translate-y-2 hover:bg-white/[0.3] transition duration-500 ">Send Message</button>
+                    <button
+                        class="rounded-full border-2 border-white/[0.4] bg-white/[0.20] mt-10 text-white py-2 px-8 hover:shadow-sm shadow-black/[0.2] hover:-translate-y-2 hover:bg-white/[0.3] transition duration-500 ">Send
+                        Message</button>
                 </div>
-                <div class="w-1/2 max-sm:w-full pb-55 max-sm:pb-0   text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
-                    <h2 class=" text-white text-3xl font-bold mb-5" >Contact Information</h2>
+                <div data-twe-ripple-init data-twe-ripple-color="light"
+                    class="w-1/2 max-sm:w-full pb-55 max-sm:pb-0   text-white/[0.6] px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+                    <h2 class=" text-white text-3xl font-bold mb-5">Contact Information</h2>
                     <div class="flex items-center justify-start gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📧</div>
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📧
+                        </div>
                         <div class="info">
                             <h3 class="text-white font-bold">Email</h3>
                             <p>hello@glossytouch.com</p>
                         </div>
                     </div>
                     <div class="flex items-center justify-start gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📞</div>v
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📞
+                        </div>v
                         <div class="info">
                             <h3 class="text-white font-bold">Phone</h3>
                             <p> +1 (555) 123-4567</p>
                         </div>
                     </div>
                     <div class="flex items-center justify-start gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📍</div>
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">📍
+                        </div>
                         <div class="info">
                             <h3 class="text-white font-bold">Address</h3>
                             <p>123 Design Street
-                                <br>Creative District, CD 12345</p>
+                                <br>Creative District, CD 12345
+                            </p>
                         </div>
                     </div>
                     <div class="flex items-center justify-start gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">🕒</div>
+                        <div class="w-10 h-10 rounded-lg  bg-white/[0.3] flex items-center justify-center text-lg">🕒
+                        </div>
                         <div class="info">
                             <h3 class="text-white font-bold">Business Hours</h3>
                             <p>Mon-Fri: 9AM-6PM
-                                <br>Sat-Sun: 10AM-4PM</p>
+                                <br>Sat-Sun: 10AM-4PM
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -112,15 +153,17 @@
     <!-- MAPS -->
     <div class="mt-15">
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12">
-            <div class=" text-white/[0.6] text-center px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
+            <div data-twe-ripple-init data-twe-ripple-color="light"
+                class=" text-white/[0.6] text-center px-8 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
                 <h3 class="text-white font-bold text-center text-3xl ">Find Us</h3>
                 <div class=" text-white/[0.6] px-8 py-25 bg-white/[0.3] border border-white/[0.09] rounded-2xl mt-10">
                     <div class="text-6xl">🗺️</div>
-                    <h4 class="text-white font-bold mt-8 mb-5" >Interactive Map Area</h4>
+                    <h4 class="text-white font-bold mt-8 mb-5">Interactive Map Area</h4>
                     <p>123 Design Street</p>
                     <p class="mt-5 mb-6">Creative District, CD 12345</p>
                     <p class="text-sm">Map integration can be added with
-                        <br>Google Maps, OpenStreetMap, or Mapbox</p>
+                        <br>Google Maps, OpenStreetMap, or Mapbox
+                    </p>
                 </div>
             </div>
         </div>
@@ -129,15 +172,15 @@
     <!-- FOOTER -->
     <footer class="mt-15">
         <div class="container mx-auto xl:w-5/6 my-5 max-md:w-11/12 ">
-            <div
+            <div data-twe-ripple-init data-twe-ripple-color="light"
                 class="footer text-white/[0.6] px-15 py-8 bg-white/[0.2] border border-white/[0.09] rounded-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/[0.3]">
                 <ul class="flex max-md:flex-col max-md:gap-y-7 items-center justify-evenly text-sm mx-10 ">
                     <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
                             href="about.html">About US</a></li>
                     <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
                             href="index.html">Privacy Policy</a></li>
-                            <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
-                                href="index.html">Terms of Service</a></li>
+                    <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
+                            href="index.html">Terms of Service</a></li>
                     <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
                             href="index.html">XML Sitemap</a></li>
                     <li class="hover:text-white/[0.9] text-shadow-white/[0.8] hover:text-shadow-lg/30"><a
@@ -150,6 +193,7 @@
         </div>
     </footer>
     <!-- FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 
 </html>
